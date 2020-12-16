@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 
 (async () => {
 
-const connectionString = 'mongodb+srv://admin:vkOIY6wRI6DJb8Es@cluster0.jup2c.mongodb.net/ocean_bancodados_16_12_2020?retryWrites=true&w=majority';
+const connectionString = 'mongodb+srv://TST_User_grs:TNqqIZzgmZwQzHhJ@clusterzero.yppot.mongodb.net/ocean_bancodados_16_12_2020?retryWrites=true&w=majority';
 
 console.info('Conectando ao banco de dados...');
 
@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 // Create, Read (All or Single), Update, Delete
 // Criar, Ler (Tudo ou Individual), Atualizar e Remover
 
-const db = client.db('ocean_bancodados_16_12_2020');
+const db = client.db('ZeroProject');
 const mensagens = db.collection('mensagens');
 
 // [CREATE] - Criar uma mensagem
